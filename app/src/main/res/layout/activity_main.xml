@@ -47,6 +47,7 @@
 
             <Spinner
                 android:id="@+id/firstSpinner"
+                android:spinnerMode="dropdown"
                 android:layout_width="match_parent"
                 android:layout_height="60dp" />
 
@@ -85,6 +86,7 @@
         android:id="@+id/secondCurrency"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
         android:layout_marginHorizontal="20dp"
         android:layout_marginTop="40dp"
         android:padding="8dp"
@@ -109,6 +111,7 @@
 
             <Spinner
                 android:id="@+id/secondSpinner"
+                android:spinnerMode="dropdown"
                 android:layout_width="match_parent"
                 android:layout_height="60dp" />
 
@@ -142,15 +145,20 @@
         android:text="@string/click_here_to_check_rates_now"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="@string/developed_by_ubaid_niazi"
-        android:textSize="20sp"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/secondCurrency" />
 
 
