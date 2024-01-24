@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Currency Converter</string>
+    <string name="see_result_here">See Result Here</string>
+    <string name="click_here_to_check_rates_now">Click here to Check Rates Now</string>
+    <string name="developed_by_ubaid_niazi">Developed by Ubaid Niazi</string>
+    <string name="select_the_other_currency">Select the other Currency</string>
+    <string name="enter_amount_here">Enter Amount Here</string>
+    <string name="select_the_base_currency">Select the Base Currency</string>
+    <string name="currency_converter">Currency Converter</string>
+</resources>
