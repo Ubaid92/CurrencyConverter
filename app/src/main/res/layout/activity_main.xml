@@ -48,6 +48,7 @@
             <Spinner
                 android:id="@+id/firstSpinner"
                 android:spinnerMode="dropdown"
+                android:paddingHorizontal="27dp"
                 android:layout_width="match_parent"
                 android:layout_height="60dp" />
 
@@ -73,7 +74,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/enter_amount_here"
-                    android:imeOptions="actionNext"
+                    android:imeOptions="actionDone"
                     android:inputType="numberDecimal"
                     android:singleLine="true" />
             </com.google.android.material.textfield.TextInputLayout>
@@ -112,6 +113,7 @@
             <Spinner
                 android:id="@+id/secondSpinner"
                 android:spinnerMode="dropdown"
+                android:paddingHorizontal="27dp"
                 android:layout_width="match_parent"
                 android:layout_height="60dp" />
 
@@ -161,5 +163,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/secondCurrency" />
 
-
+    <LinearLayout
+        android:id="@+id/progress"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="200dp"
+        android:gravity="center"
+        android:background="#77000000">
+        <ProgressBar
+            android:progressBackgroundTint="#3F51B5"
+            android:progressTint="#3F51B5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
